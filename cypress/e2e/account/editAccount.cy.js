@@ -25,13 +25,25 @@ describe('Edit Account Tests', () => {
         cy.url().should("include", "/customer/account/");
         // cy.contains("You saved the account information.");
         // task simpan email baru
-            cy.task('updateFixture', {
-            fileName: 'users',
-            key: 'validUser',
-            validUser: {
-              email:email ,
-            }
-          });         
-    });     
-   
-});
+            // cy.task('updateFixture', {
+            // fileName: 'users',
+            // key: 'validUser',
+            // validUser: {
+            //   email:email ,
+            // }
+       //   });         
+    }); 
+      it('Update account information successfully  with invalid email format',() => {
+      editAccount(
+      editUser.firstName,
+      editUser.lastName, 
+      "invalid@mail", 
+      editUser.currentPassword, 
+      editUser.newPassword, 
+      editUser.confirmPassword
+      );
+      cy.wait(10000);
+      cy.contains("Please enter a valid email address.");   
+      })       
+        
+ });

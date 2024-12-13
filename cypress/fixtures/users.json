@@ -1,6 +1,6 @@
 {
   "validUser": {
-    "email": "editUser_1734102129832@example.com",
+    "email": "testuser@example.com",
     "password": "Test@1234"
   },
   "invalidUser": {
