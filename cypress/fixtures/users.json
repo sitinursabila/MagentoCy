@@ -1,0 +1,31 @@
+{
+  "validUser": {
+    "email": "editUser_1734102129832@example.com",
+    "password": "Test@1234"
+  },
+  "invalidUser": {
+    "email": "invaliduser@example.com",
+    "password": "InvalidPass"
+  },
+  "address": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "street": "123 Test Street",
+    "city": "TestCity",
+    "state": "California",
+    "postcode": "12345",
+    "phone": "1234567890"
+  },
+  "newUser": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "password": "NewPass123"
+  },
+  "editUser": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "currentPassword": "Test@1234",
+    "newPassword": "Test@1234",
+    "confirmPassword": "Test@1234NewPassword123"
+  }
+}
